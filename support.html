@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="vieuwport" 
+    content="with=device-widht, initial-scale=1.0">
+
+    <link rel="icon" href="icons/logozwartsite.png">
+    <title>Euphoriax</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/topbar.css">
+    <link rel="stylesheet" href="css/basics.css">
+    <link rel="stylesheet" href="css/covers.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/sidemenu.css">
+
+    <script src="js/script.js" defer></script>
+    <script src="js/sidemenu.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+</head>
+
+<body>
+
+    <!---- scroll to top ----->
+    <div onclick="ScrollToTop()" class="ScrollTop"> <img src="icons/top.png"></div>
+
+    <!---- 3 topbars ----->
+
+    <section>
+
+        <section class="topbarvast">
+        <div class="topbar1">
+
+            <div class="teksttopbar1">
+                <a href="partner.html">Partner</a>
+                <a href="support.html">Support</a>
+                <a href="company.html">About Us</a>
+                <a style="border-right-width: 0px; padding-left: 8px;"><img src="icons/belgie.png" alt=""></a>
+            </div>
+        </div>
+
+        <div class="topbar2">
+
+            <div class="icons-topbar2" style=" margin-right: 0;">
+               <img class="menu-topbar2" src="icons/menu.png" 
+               style="padding: 7px; cursor: pointer; opacity: 85%; margin-bottom: 0px;" 
+               onclick="showMenu()" id="knop1">
+            </div>
+
+            <div class="logo-topbar2">
+            <a href="index.html"><img src="image/logozwart.png"></a>
+            </div>
+
+            <div class="SideMenu" id="SideMenu">
+
+                <div class="topbarvast">
+                    <div class="sidemenuhoofd" style="padding-top: 30px; height: 100px;">
+                        <a href="index.html" id="TitelSub" style="width: auto;">HOME</a>
+                        <i class="fa fa-times" onclick="hideMenu()" id="knop2"></i>
+                    </div>
+
+                    <div class="sidemenuzoek" style="height: 100px; padding: 40px;
+                    padding-top: 20px; padding-bottom: 20px; ">
+
+                            <input class="zoekbar" 
+                            style="order: 1; border-radius: 0; border-top-left-radius: 2px; border-bottom-left-radius: 2px; 
+                            flex: 1; width: 0; display: block; height: 50px;"
+                            id="zoekbar" type="text" placeholder="Search a product">
+
+                            <button class="zoekknop" 
+                            style="border-radius: 0; border-top-right-radius: 2px; border-bottom-right-radius: 29x; display: block;
+                            height: 50px; width: 50px;" 
+                            id="zoekknop">
+
+                            <img src="icons/search.png">
+                            </button>
+                    </div>
+                </div>
+
+                    <div class="tussenfoto" style="margin: 0; margin-top: 200px;">
+                        <img src="image/tussenfoto.png" style="height: 310px;">
+                
+                    </div>
+
+                    
+                    <div class="sidemenuhoofd">
+                        <a href="store.html" id="TitelSub">STORE</a>
+                        <img src="icons/slidemenuup.png" onclick="SubOpenClose(this, 'store'); SubiconChange(this)">
+                    </div>
+                    <div class="sidemenusub closesub" id="store-submenu">
+                        <a href="store.html"> <p>New</p> </a>
+                        <a href="store.html"> <p>Popular</p> </a>
+                        <a href="store.html"> <p style="border-bottom: 0" >Upcoming</p> </a>
+                    </div>
+                
+                    <div class="sidemenuhoofd">
+                        <a href="store.html#Supplements" id="TitelSub">MEMBERSHIPS</a>
+                        <img src="icons/slidemenuup.png" onclick="SubOpenClose(this, 'supplements'); SubiconChange(this)">
+                    </div>
+                    <div class="sidemenusub closesub" id="supplements-submenu">
+                        <a href="https://www.patreon.com/euphoriaxpremium/membership"> <p>Personal Assistance</p> </a>
+                        <a href="store.html"> <p style="border-bottom: 0" >Premium</p> </a>
+
+                    </div>
+                
+                    <div class="sidemenuhoofd">
+                        <a href="drops.html" id="TitelSub">PATREON</a>
+                        <img src="icons/slidemenuup.png" onclick="SubOpenClose(this, 'drops'); SubiconChange(this)">
+                    </div>
+                    <div class="sidemenusub closesub" id="drops-submenu">
+                        <a href="https://www.patreon.com/euphoriaxpremium/membership"> <p>Memberships</p> </a>
+                        <a href="https://www.patreon.com/euphoriaxpremium/shop"> <p style="border-bottom: 0">Items Availible</p> </a>
+                    </div>
+
+
+                    <div class="footerside1">
+
+                    </div>
+                    <div class="footerside2">
+                        <a href="partner.html">Partner</a>
+                        <a href="support.html">Support</a>
+                        <a href="company.html#About-Us">About Us</a>
+                        <a style="border-right-width: 0px; padding-left: 8px;"><img src="icons/belgie.png" alt=""></a>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="store.html">STORE</a></li>
+                    <li><a href="https://www.patreon.com/euphoriaxpremium/membership">MEMBERSHIPS</a></li>
+                    <li><a href="https://www.patreon.com/EuphoriaxPremium">PATREON</a></li>
+                </ul> 
+            </div>
+
+            <div class="zoek-container">
+                    <input class="zoekbar" id="zoekbar2" type="text" placeholder="Search a product">
+                    <button class="zoekknop" id="zoekknop2">
+                        <img src="icons/search.png">
+                    </button>
+
+            </div>
+            <div class="icons-topbar2" style="margin-left: 0px;">
+                <a href="under-maintenance.html"><img src="icons/heart.png" style="padding: 3px; padding-bottom: 2px;"></a>
+                <a href="under-maintenance.html"><img src="icons/shopping-bag.png" style="padding: 5px; padding-bottom: 6px; margin-right: 20px;"></a>
+            </div>
+                       
+        </div>
+
+
+    </section>
+
+        <div class="topbar3" style="height: 104px;">
+            <a href="partner.html" class="teksttopbar3"></a>
+        </div>    
+    </section>
+
+
+    <div class="tekstbox">
+        <h1>SUPPORT</h1>
+    </div>
+
+    <div id="FAQ" class="tussenlijn" style="margin-top: 50px;"></div>
+    
+    <div class="tekstbox">
+        <h2 style="margin-left: 0;">FAQ</h2>
+        <p>
+            <b> What is Euphoriax?</b><br>
+            Euphoriax is a company specializing in selling verse codes and map templates for the UEFN (Unreal Editor for Fortnite).
+        </p>
+        <p>
+            <b> How does Euphoriax collaborate with others?</b><br>
+            We collaborate with individuals or groups who contribute to the creation of verse codes and map templates. These collaborators 
+            receive a share of the profits generated from the sale of their contributions.
+        </p>
+        <p>
+           <b> Where can I purchase products from Euphoriax?</b><br>
+            You can purchase our products from our Patreon website or through authorized distributors.
+        </p>
+        <p>
+            <b> Are there any licensing restrictions on the products?</b><br>
+            Our products are for personal use only. They cannot be sold or distributed commercially without 
+            obtaining proper licensing from Euphoriax. Unauthorized resale or distribution is strictly prohibited.
+        </p>
+        <p>
+            <b> Can I customize the verse codes and map templates I purchase?</b><br>
+            Yes, our products are designed to be easily customizable to suit your project's needs.
+        </p>
+        <p>
+            <b> Does Euphoriax provide support for its products?</b><br>
+            Yes, we offer customer support to assist with any questions or issues you may encounter while using our products. Please note that personalized assistance 
+            is prioritized for customers with a dedicated support role. However, we are also happy to assist you whenever we have available time.
+        </p>
+        <p>
+            <b> How can I become a collaborator with Euphoriax?</b><br>
+            If you're interested in collaborating with us, please reach out to our team through the contact information 
+            provided on our website. We're always open to discussing potential partnerships.
+        </p>
+        <p>
+            <b> Is Euphoriax involved in any community initiatives or events?</b><br>
+            Yes, we actively participate in community initiatives, events, and forums related to the UEFN development. 
+            Keep an eye on our website and social media channels for updates on our involvement. 
+            Don't forget to join our Discord community and follow us on social media for more updates and interactions!
+        </p>
+        <p>
+            <b> Where can I find updates or news about Euphoriax?</b><br>
+            You can stay updated on the latest news, product releases, and announcements 
+            from Euphoriax by following us on our website and social media platforms.
+        </p>
+        <p>
+            <b> How can I contact Euphoriax for further inquiries?</b><br>
+            For any additional questions or inquiries, please feel free to contact us through the email 
+            or phone number provided on our website's contact page. We'll be happy to assist you.
+        </p>
+    </div>
+
+  <div id="Payment-Options" class="tussenlijn"></div>
+
+    <div class="tekstbox">
+        <h2 style="margin-left: 0;">PAYMENT OPTIONS</h2>
+        <p>
+            <b> Payment Methods</b> <br>
+            We utilize Patreon as our primary payment method, offering convenience and flexibility for our customers. 
+            You can easily select Patreon as your preferred payment option during the checkout process.
+        </p>
+        <p>
+            <b> Security and Privacy</b> <br>
+            Your payment information is treated with the highest standards of security and privacy. Patreon employs 
+            encryption technology to safeguard your data, ensuring that your transactions are secure and confidential.
+        </p>
+        <p>
+            <b> Payment Confirmation</b> <br>
+            Once your payment is successfully processed through Patreon, you will receive an email confirmation. 
+            This email will provide a detailed summary of your order and payment details for your records.
+        </p>
+        
+
+        
+        
+    </div>
+<!----Footer----->
+<footer class="footer">
+    <div class="footercontainer">
+        <div class="footerrow">
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="company.html#About-Us">about us</a></li>
+                    <li><a href="company.html#Our-Services">our services</a></li>
+                    <li><a href="company.html#Privacy-Policy">privacy policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>support</h4>
+                <ul>
+                    <li><a href="support.html#FAQ">FAQ</a></li>
+                    <li><a href="support.html#Payment-Options">payment options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>online shop</h4>
+                <ul>
+                    <li><a href="https://www.patreon.com/euphoriaxpremium/membership">Memberships</a></li>
+                    <li><a href="https://www.patreon.com/euphoriaxpremium/shop">Packagings</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/euphoriax_official"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@euphoriax_official"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.youtube.com/@euphoriax_official"><i class="fab fa-youtube"></i></a>
+                    <a href="https://discord.com/invite/q7NCgsH3CS"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+        <p>	&#169;2024 - Euphoriax - Belgium</p>
+    </div>
+</footer>
+
+
+
+
+
+</body>
+</html>

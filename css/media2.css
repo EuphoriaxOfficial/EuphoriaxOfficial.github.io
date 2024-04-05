@@ -1,0 +1,72 @@
+/* Media 2 bevat: 
+
+productpage
+shoppingcart
+...
+*/
+
+/*-----productpage------*/
+
+/*------gsm------*/
+
+@media(max-width: 767px){
+
+
+    .productpagefotos{
+        display: none;
+    }
+    .productpagecontent{
+        margin: 0;
+        justify-content: center;
+    }
+    .productpagetext{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+
+/*------tablet------*/
+@media(max-width: 1023px) and (min-width: 768px){
+
+
+    .productpagefotophonesec{
+        display: none;
+    }
+
+    .btn-primary_productpage{
+        width: 300px;
+    }
+    .productpagetext{
+        width: 300px;
+        margin-left: 25px;
+    }
+    .productpagecontent{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .sidemenusub h3{
+        width: 250px;
+    }
+    .sidemenusub h4{
+        width: 250px;
+    }
+}
+
+/*------tablet & gsm------*/
+@media(max-width: 1024px){
+
+
+}
+
+
+/*------pc------*/
+@media(min-width: 1024px){
+
+    .productpagefotophonesec{
+        display: none;
+        
+    }
+
+}

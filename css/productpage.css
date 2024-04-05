@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.productpagecontent{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+
+/*------gsm------*/
+.productpagefotophonesec{
+    display: block;
+}
+.productpagefotophone {
+    display: flex;
+}
+.productpagefotophone img {
+    max-width: 100%;
+    align-items: stretch;
+    max-height: 100%;
+}
+.productpagefotophone1{
+    flex: 0.677;
+    margin-top: 150px;
+    margin-left: 25px;
+}
+.productpagefotophone2{
+    margin-top: 150px;
+    margin-right: 25px;
+    margin-left: 7px;
+    flex: 0.323;
+}
+
+
+.productpagefototabletsec{
+    display: block;
+}
+
+.btn-primary_productpage{
+    background-color: rgb(0, 0, 0);
+    height: 40px;
+    border-radius: 20px;
+    width: 450px;
+    justify-self: center;
+    border: none;
+    opacity: 0.80;
+    transition: 0.8s;
+
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-primary_productpage:hover{
+    opacity: 1;
+}
+
+.productpagefototablet2{
+    margin-top: 150px;
+    margin-bottom: 5px;
+    display: flex;
+    width: 49.1%;
+}
+
+
+
+.productpagefotos{
+    display: block;
+}
+.productpagefotos1 {
+    flex: 1;
+    margin-top: 210px;
+    height: auto;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 2px;
+}
+.productpagefotos1 img {
+    max-width: 50%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.productpagefotos2 {
+    flex: 1;
+    margin-top: 10px;
+    height: auto;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    overflow: hidden;
+}
+.productpagefotos2 img {
+    max-width: 33%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 2px;
+}
+
+.fullscreen-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+.fullscreen-image.active {
+    display: flex;
+}
+.fullscreen-image img {
+    max-width: 95%;
+    max-height: 95%;
+}
+
+
+
+
+
+.productpagerating{
+    display: flex;
+    height: 15px;
+    opacity: 85%;
+    margin-bottom: 5px;
+}
+.productpagerating img{
+    padding-right: 3px;
+    padding-top: 2px;
+}
+.productpagerating p{
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    margin-left: 5px;
+    padding: 0;
+}
+
+.productpagetext{
+    width: 450px;
+    height: auto;
+    margin-top: 210px;
+    margin-left: 50px;
+}
+.productpageinfo h1{
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 2px;
+}
+.productpageinfo h3{
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 18px;
+    opacity: 90%;
+}
+.productpageinfo p{
+    font-size: 14px;
+    padding: 0;
+    margin-top: 3px;
+    color: black;
+    opacity: 70%;
+}
+
+
+
+
+.productpageothercolorpic img{
+    border: 1px rgb(255, 255, 255) solid;
+    height: 90px;
+    cursor: pointer;
+    margin-right: 2px;
+}
+.productpageothercolorpic img:hover{
+    border: 1px black solid;
+}
+
+
+.producpagesizetext{
+    margin-top: 30px;
+    display: flex;
+}
+.producpagesizetext h3{
+    font-size: 15px;
+    margin-right: 200px;
+    font-weight: 600;
+}
+.producpagesizetext a{
+    font-size: 12px;
+    color: black;
+    opacity: 85%;
+}
+
+
+.productpagesize{
+    display: flex;
+    text-align: center; 
+}
+
+.productpagesize h3{
+    background-color: #ededed;
+    height: 40px;
+    width: 45px;
+    margin: 8px;
+    padding: 9px;
+    font-size: 15px;
+    border-radius: 3px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.01);
+    transition: 0.5s;
+}
+.productpagesize h3:hover{
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.20);
+}
+
+.sidemenusub h3{
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+    margin-top: 20px;
+    opacity: 0.85;
+    width: 400px;
+}
+.sidemenusub h4{
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    opacity: 0.95;
+    margin-top: 8px;
+    width: 400px;
+}
+
+
+
+
+

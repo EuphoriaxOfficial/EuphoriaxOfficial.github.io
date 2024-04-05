@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*------gsm------*/
+@media(max-width: 767px){
+
+    .swiper-products h2, .swiper-vakjesoverlay h2,#Upcoming, #Clothing, #Supplements{
+        margin-left: 25px;
+    }
+    .tekstbox{
+        margin-left: 25px;
+    }
+
+    .tekst-box{
+        margin-top: -80px;
+    }
+    .tekst-box-tussen p{
+        font-size: 10px;
+    }
+    .hero-btn-tussen{
+        padding: 8px;
+        padding-left: 14px;
+        padding-right: 14px;
+        font-size: 11px;
+    }
+    .tussenfoto img{
+        height: 375px;
+    }
+    .tekst-box-tussen h1, .tekstbox h1{
+        font-size: 30px;
+    }
+
+    
+    .vakjesoverlay-design{
+        margin-bottom: 30px;
+    }
+    .layer h3{
+        font-size: 24px;
+    }
+    .layer:hover img{
+        bottom: 5%;
+    }
+    .rij2{
+        display:inline-block;
+    }
+
+
+
+    .zoekbar{
+        display: none;
+    }
+    .zoekknop{
+        display: none;
+    }
+
+    .icons-topbar2 img{
+       margin-right: 12px;
+    }
+
+    .footer{
+        padding-left: 24px;
+    }
+
+
+    /*------topbar3------*/
+    .topbar3{
+        height: 68px;
+    }
+    .teksttopbar3{
+        visibility: hidden;
+    }
+    .icons-topbar2{
+        margin-right: 7px;
+        margin-left: 24px;
+    }
+
+    /*------swiperactivate------*/
+    .swiper-products{
+        display: block;
+    }
+    .nonswiper-products{
+        display: none;
+    }
+
+
+    .layer h3{
+        font-size: 20px;
+    }
+    .layer:hover h3{
+        bottom: 7%;
+    }
+
+    .tussenlijn{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+}
+
+
+
+/*------tablet------*/
+@media(max-width: 1023px) and (min-width: 768px){
+
+
+    .tekst-box-tussen h1, .tekstbox h1{
+        font-size: 37px;
+    } 
+    .tekst-box-tussen p{
+        font-size: 10px;
+    }
+    .hero-btn-tussen{
+        padding: 8px;
+        padding-left: 14px;
+        padding-right: 14px;
+        font-size: 11px;
+    }
+    .tussenfoto img{
+        height: 350px;
+    }
+    .rij{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tussenfoto{
+        margin-top: 50px;
+    }
+
+
+    /*------zoekbar verandering------*/
+    .zoekbar{
+        flex: 0.20;
+        order: 2;
+        border-radius: 0px;
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+    }
+    .zoekknop{
+        order: 1;
+        border-radius: 0px;
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+    }
+
+
+
+    .layer h3{
+        font-size: 30px;
+    }
+    .layer:hover h3{
+        bottom: 6%;
+    }
+    .tekstbox p{
+        margin-right: 50px;
+    }
+
+
+}
+
+/*------tablet & gsm------*/
+@media(max-width: 1024px){
+    /*------navbar------*/
+    .nav-links {
+        display: none;
+    }
+    .topbar2 .fa{
+        display: block;
+    }    
+    
+    .logo-topbar2{
+        display: flex;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%); 
+    }
+    .logo-topbar2 img{
+        width: 69px;
+        margin-top: 1px;
+        margin-left: 0px;
+    }
+
+    /*------swiperactivate------*/
+    .swiper-vakjesoverlay{
+        display: block;
+    }
+
+
+    /*------topbar1------*/
+    .teksttopbar1 a{
+        visibility: hidden;
+    }
+
+    .tekstbox p{
+        width: auto;
+    }
+    .tussenlijn{
+        width: auto;
+    }
+}
+
+
+
+
+
+/*------pc------*/
+@media(min-width: 1024px){
+/*------navbar------*/
+
+
+    /*------swiperactivate------*/
+    .nonswiper-vakjesoverlay{
+        display: block;
+    }
+    #knop1{
+        display: none;
+    }
+
+    
+}

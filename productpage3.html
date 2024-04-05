@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="vieuwport" 
+    content="with=device-widht, initial-scale=1.0">
+
+    <link rel="icon" href="icons/logozwartsite.png">
+    <title>Euphoriax</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/topbar.css">
+    <link rel="stylesheet" href="css/basics.css">
+    <link rel="stylesheet" href="css/covers.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/sidemenu.css">
+    <link rel="stylesheet" href="css/account.css">
+    <link rel="stylesheet" href="css/productpage.css">
+    <link rel="stylesheet" href="css/media2.css">
+
+    <script src="js/script.js" defer></script>
+    <script src="js/sidemenu.js" defer></script>
+    <script src="js/slider.js" defer></script>
+    <script src="js/shoppingcart.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+</head>
+
+<body>
+    <!---- 3 topbars ----->
+
+    <section>
+
+        <section class="topbarvast">
+        <div class="topbar1">
+
+            <div class="teksttopbar1">
+                <a href="/Euphoriax/php/login.php">Account</a>
+                <a href="partner.html">Partner</a>
+                <a href="support.html">Support</a>
+                <a href="blog.html">Blog</a>
+                <a href="company.html#About-Us">About Us</a>
+                <a style="border-right-width: 0px; padding-left: 8px;"><img src="icons/belgie.png" alt=""></a>
+            </div>
+        </div>
+
+        <div class="topbar2">
+
+            <div class="icons-topbar2" style=" margin-right: 0;">
+            <img class="menu-topbar2" src="icons/menu.png" 
+            style="padding: 7px; cursor: pointer; opacity: 85%; margin-bottom: 0px;" 
+            onclick="showMenu()" id="knop1">
+            </div>
+
+            <div class="logo-topbar2">
+            <a href="index.html"><img src="image/logozwart.png"></a>
+            </div>
+
+            <div class="SideMenu" id="SideMenu">
+
+                <div class="topbarvast">
+                    <div class="sidemenuhoofd" style="padding-top: 30px; height: 100px;">
+                        <a href="index.html" id="TitelSub" style="width: auto;">HOME</a>
+                        <i class="fa fa-times" onclick="hideMenu()" id="knop2"></i>
+                    </div>
+
+                    <div class="sidemenuzoek" style="height: 100px; padding: 40px;
+                    padding-top: 20px; padding-bottom: 20px; ">
+
+                            <input class="zoekbar" 
+                            style="order: 1; border-radius: 0; border-top-left-radius: 2px; border-bottom-left-radius: 2px; 
+                            flex: 1; width: 0; display: block; height: 50px;"
+                            id="zoekbar" type="text" placeholder="Search a product">
+
+                            <button class="zoekknop" 
+                            style="border-radius: 0; border-top-right-radius: 2px; border-bottom-right-radius: 29x; display: block;
+                            height: 50px; width: 50px;" 
+                            id="zoekknop">
+
+                            <img src="icons/search.png">
+                            </button>
+                    </div>
+                </div>
+
+                    <div class="tussenfoto" style="margin: 0; margin-top: 200px;">
+                        <img src="image/tussenfoto.png" style="height: 310px;">
+                
+                    </div>
+
+                    
+                    <div class="sidemenuhoofd">
+                        <a href="store.html" id="TitelSub">STORE</a>
+                        <img src="icons/slidemenuup.png" onclick="SubOpenClose(this, 'store'); SubiconChange(this)">
+                    </div>
+                    <div class="sidemenusub closesub" id="store-submenu">
+                        <a href="store.html#Supplements"> <p>Supplements</p> </a>
+                        <a href="store.html#Clothing"> <p>Clothing</p> </a>
+                        <a href="store.html#Upcoming"> <p style="border-bottom: 0" >Upcoming</p> </a>
+                    </div>
+                
+                    <div class="sidemenuhoofd">
+                        <a href="store.html#Supplements" id="TitelSub">SUPPLEMENTS</a>
+                        <img src="icons/slidemenuup.png" onclick="SubOpenClose(this, 'supplements'); SubiconChange(this)">
+                    </div>
+                    <div class="sidemenusub closesub" id="supplements-submenu">
+                        <a href="#"> <p>PreWorkout</p> </a>
+                        <a href="#"> <p>Creatine</p> </a>
+                        <a href="#"> <p style="border-bottom: 0">Vitamines</p> </a>
+                    </div>
+                
+                    <div class="sidemenuhoofd">
+                        <a href="drops.html" id="TitelSub">DROPS</a>
+                        <img src="icons/slidemenuup.png" onclick="SubOpenClose(this, 'drops'); SubiconChange(this)">
+                    </div>
+                    <div class="sidemenusub closesub" id="drops-submenu">
+                        <a href="#"> <p>Monthly</p> </a>
+                        <a href="#"> <p style="border-bottom: 0">Exclusive</p> </a>
+                    </div>
+                
+                    <div class="sidemenuhoofd">
+                        <a href="more.html" id="TitelSub">MORE</a>
+                        <img src="icons/slidemenuup.png" onclick="SubOpenClose(this, 'more'); SubiconChange(this)">
+                    </div>
+                    <div class="sidemenusub closesub" id="more-submenu">
+                        <a href="#"> <p>Monthly Drops</p> </a>
+                        <a href="#"> <p>Upcoming Projects</p> </a>
+                        <a href="#"> <p>Our App</p> </a>
+                    </div>
+
+
+                    <div class="footerside1">
+
+                    </div>
+                    <div class="footerside2">
+                            <a href="/Euphoriax/php/login.php">Account</a>
+                            <a href="partner.html">Partner</a>
+                            <a href="support.html">Support</a>
+                            <a href="blog.html">Blog</a>
+                            <a href="company.html#About-Us">About Us</a>
+                            <a style="border-right-width: 0px; padding-left: 8px;"><img src="icons/belgie.png" alt=""></a>
+                    </div>
+            </div>
+
+
+
+
+
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="store.html">STORE</a></li>
+                    <li><a href="store.html#Supplements">SUPPLEMENTS</a></li>
+                    <li><a href="drops.html">DROPS</a></li>
+                    <li><a href="more.html">MORE</a></li>
+                </ul> 
+            </div>
+
+            <div class="zoek-container">
+                    <input class="zoekbar" id="zoekbar2" type="text" placeholder="Search a product">
+                    <button class="zoekknop" id="zoekknop2">
+                        <img src="icons/search.png">
+                    </button>
+
+            </div>
+
+            <div class="icons-topbar2" style="margin-left: 0px;">
+                <a href="wishlist.html"><img src="icons/heart.png" style="padding: 3px; padding-bottom: 2px;"></a>
+                <a href="shoppingcart.html"><img src="icons/shopping-bag.png" style="padding: 5px; padding-bottom: 6px; margin-right: 20px;"></a>
+            </div>
+                    
+        </div>
+
+        </section>   
+    </section>
+
+
+
+    <section class="productpagefotophonesec">
+        <div class="productpagefotophone">
+            <div class="productpagefotophone1">
+                <img src="image/shirt.png" onclick="openFullscreen(this)">
+            </div>
+            <div class="productpagefotophone2">
+                <img src="image/shirt2.png" onclick="openFullscreen(this)">
+                <img src="image/shirt2.png" onclick="openFullscreen(this)">
+                <img src="image/shirt2.png" onclick="openFullscreen(this)">
+            </div>        
+        </div>
+    </section>
+
+    <section class="productpagecontent">
+        
+        <div class="productpagefotos">
+            <div class="productpagefotos1">
+                <img src="image/shirt.png" onclick="openFullscreen(this)">
+                <img src="image/shirt.png" onclick="openFullscreen(this)">
+            </div>
+            <div class="productpagefotos2">
+                <img src="image/shirt2.png" onclick="openFullscreen(this)">
+                <img src="image/shirt2.png" onclick="openFullscreen(this)">
+                <img src="image/shirt2.png" onclick="openFullscreen(this)">
+            </div>
+        </div>
+    
+        <div class="fullscreen-image" id="fullscreen-image">
+            <img src="" id="fullscreen-image-src" alt="Full Screen Image">
+        </div>
+
+        <div class="productpagetext">
+            <div class="productpagerating">
+                <img src="icons/ster.png">
+                <img src="icons/ster.png">
+                <img src="icons/ster.png">
+                <img src="icons/ster.png">
+                <img src="icons/ster.png">
+                <p>4.8</p>
+            </div>
+
+            <div class="productpageinfo">
+                <h1> Tshirt compressed cool3 </h1>
+                <p> White </p>
+                <p> Men </p>
+                <h3> &euro; 55 </h3>
+            </div>
+            <div class="productpageothercolorpic">
+                <img src="image/shirt.png">
+                <img src="image/shirt.png">
+                <img src="image/shirt.png">
+            </div> 
+
+            <div class="producpagesizetext">
+                <h3> SELECT SIZE</h3>
+                <a href="index.html"> Size Guide</a>
+            </div>
+            <div class="productpagesize">
+                <h3 style="margin-left: 0;">XS</h3>
+                <h3>S</h3>
+                <h3>M</h3>
+                <h3>L</h3>
+                <h3>XL</h3>
+                <h3 style="padding-left: 7px;">XXL</h3>
+            </div>
+
+            <div class="form-btn">
+                <input type="submit" value="ADD TO BAG" name="add-to-cart" class="btn btn-primary_productpage">
+            </div>
+            <script>
+                // toevoegen van product 2
+                function addProduct2ToBasket() {
+                    localStorage.setItem('product2_in_basket', 'true');
+                }
+            </script>
+
+            <div class="form-btn" style="margin-top: 6px;">
+                <input type="submit" value="ADD TO WISHLIST" name="add-to-wishlist" class="btn btn-primary_productpage" style="background-color: #e7e7e7; color: black;">
+            </div>
+
+            <div class="SideMenu" style="left: auto; top: auto; position: relative; z-index: 1; margin-top: 50px; height: 750px;">
+
+                <div class="sidemenuhoofd">
+                    <a id="TitelSub" style="font-size: 18px;">DESCRIPTION</a>
+                    <img src="icons/slidemenuup.png" onclick="SubOpenClose(this, 'DESCRIPTION1'); SubiconChange(this)">
+                </div>
+
+                <div class="sidemenusub closesub" id="DESCRIPTION1-submenu" style="margin-bottom: 30px;">
+                    <h3 style="margin-top: 0;">FEEL GOOD, PERFORM BETTER</h3>
+
+                    <h4>
+                        Whether it's a bicep-poppin' upper day or a big glute sesh, Adapt's here to help you look damn good while you put in the work.
+                    </h4>
+
+                    <h4>    
+                        &#10004; Sweat-wicking tech keeps you cool <br>
+                        &#10004; Mesh structures knitted into the pattern for a textured effect<br>
+                        &#10004; Seamless ribbed waistband and ankle cuffs<br>
+                        &#10004; All over camo jacquard<br>
+                    </h4>
+                     
+                    <h3>SIZE & FIT</h3>
+                    <h4>                        
+                        &#10004; High waisted fit<br>
+                        &#10004; Model is 5'3" and wears size S<br>
+                    </h4>
+
+                        
+                    <h3>MATERIALS & CARE</h3>
+                    <h4>
+                        &#10004; Seamless construction for zero distraction lifting<br>
+                        &#10004; 78% Nylon, 15% Polyester, 7% Elastane<br>
+                    </h4>
+                             
+                    <h4 style="margin-top: 20px; font-size: 12px;">SKU: B5A8B-UCDWp</h4>
+                </div>
+
+                <div class="sidemenuhoofd">
+                    <a id="TitelSub" style="font-size: 18px;">DELIVERY & RETURNS</a>
+                    <img src="icons/slidemenuup.png" onclick="SubOpenClose(this, 'DELIVERY & RETURNS2'); SubiconChange(this)">
+                </div>
+
+                <div class="sidemenusub closesub" id="DELIVERY & RETURNS2-submenu" style="margin-bottom: 30px;">
+                    <h4 style="margin-top: 0;">
+                        &#10004; Belgium, Luxembourg: Free Standard delivery over 75&euro;.<br>
+
+                        &#10004; Ireland: Free Standard delivery over 75&euro;.<br>
+                            
+                        &#10004; Rest of Europe: Please refer to our delivery information.<br>
+                            
+                        &#10004;Orders made between 16/10/23 - 01/01/24 can be returned up until 31/01/24.<br>
+                    </h4>
+                </div>
+
+                <div class="sidemenuhoofd" style="height: 2px;">
+                    <a id="TitelSub"></a>
+                </div>
+            </div>
+            
+
+        </div>
+    </section>
+    
+    <script>
+        // fotos in het groot zetten script
+        function openFullscreen(image) {
+            const fullscreenImage = document.getElementById('fullscreen-image');
+            const fullscreenImageSrc = document.getElementById('fullscreen-image-src');
+
+            fullscreenImageSrc.src = image.src;
+            fullscreenImage.classList.add('active');
+        }
+
+        // Close full-screen image when clicking on it
+        const fullscreenImage = document.getElementById('fullscreen-image');
+        fullscreenImage.addEventListener('click', () => {
+            fullscreenImage.classList.remove('active');
+        });
+    </script>
+
+
+    <!-----product-previeuw1------>
+    
+    <section class="nonswiper-products" style="margin-left: 7%; margin-right: 7%;">
+        <div class="product-previeuw">   
+    
+            <h2 style="margin-top: 0;">YOU MIGHT LIKE</h2>
+    
+            <div class="rij">
+                <div class="product-previeuw-sectie" style="margin-right: 5px; margin-left: 5px;">
+                    <Button class="heartprevieuw"><img src="icons/heart.png" onClick="HeartChange(this)"></button>
+                    <a class="fotoprevieuw" href="productpage.html"><img src="image/shirt.png"></a>
+                    <h3>Tshirt - 2023SE</h3>
+                    <p>100% coton, Tshirt &euro; 39.99</p>
+                </div>
+                <div class="product-previeuw-sectie" style="margin-right: 5px; margin-left: 5px;">
+                    <Button class="heartprevieuw"><img src="icons/heart.png" onClick="HeartChange(this)"></button>
+                    <a class="fotoprevieuw" href="productpage.html"><img src="image/shirt.png"></a>
+                    <h3>Tshirt - 2023SE</h3>
+                    <p>100% coton, Tshirt &euro; 39.99</p>
+                </div>
+                <div class="product-previeuw-sectie" style="margin-right: 5px; margin-left: 5px;">
+                    <Button class="heartprevieuw"><img src="icons/heart.png" onClick="HeartChange(this)"></button>
+                    <a class="fotoprevieuw" href="productpage.html"><img src="image/shirt.png"></a>
+                    <h3>Tshirt - 2023SE</h3>
+                    <p>100% coton, Tshirt &euro; 39.99</p>
+                </div>
+                <div class="product-previeuw-sectie" style="margin-right: 5px; margin-left: 5px;">
+                    <Button class="heartprevieuw"><img src="icons/heart.png" onClick="HeartChange(this)"></button>
+                    <a class="fotoprevieuw" href="productpage.html"><img src="image/shirt.png"></a>
+                    <h3>Tshirt - 2023SE</h3>
+                    <p>100% coton, Tshirt &euro; 39.99</p>
+                </div>                        
+            </div>
+        </div>
+    </section>
+    
+    <!-----product-previeuw1-swiper------>
+    <section class="swiper-products">
+            <div class="swiper mySwiper">
+    
+                <h2 >YOU MIGHT LIKE</h2>
+    
+                <div class="product-previeuw swiper-wrapper" style="margin: 0px;" >
+                    <div class="product-previeuw-sectie swiper-slide" style="margin: 0px;">
+                    <Button class="heartprevieuw"><img src="icons/heart.png" onClick="HeartChange(this)"></button>
+                        <a class="fotoprevieuw" href="productpage.html"><img src="image/shirt.png"></a>
+                        <h3>Tshirt - 2023SE</h3>
+                        <p>100% coton, Tshirt &euro; 39.99</p>
+                    </div>
+                  <div class="product-previeuw-sectie swiper-slide" style="margin: 0px;">
+                    <Button class="heartprevieuw"><img src="icons/heart.png" onClick="HeartChange(this)"></button>
+                        <a class="fotoprevieuw" href="productpage.html"><img src="image/shirt.png"></a>
+                        <h3>Tshirt - 2023SE</h3>
+                        <p>100% coton, Tshirt &euro; 39.99</p>
+                    </div>
+                  <div class="product-previeuw-sectie swiper-slide" style="margin: 0px;">
+                    <Button class="heartprevieuw"><img src="icons/heart.png" onClick="HeartChange(this)"></button>
+                        <a class="fotoprevieuw" href="productpage.html"><img src="image/shirt.png"></a>
+                        <h3>Tshirt - 2023SE</h3>
+                        <p>100% coton, Tshirt &euro; 39.99</p>
+                    </div>
+                  <div class="product-previeuw-sectie swiper-slide" style="margin: 0px;"> 
+                    <Button class="heartprevieuw"><img src="icons/heart.png" onClick="HeartChange(this)"></button>
+                        <a class="fotoprevieuw" href="productpage.html"><img src="image/shirt.png"></a>
+                        <h3>Tshirt - 2023SE</h3>
+                        <p>100% coton, Tshirt &euro; 39.99</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+
+    <!----Footer----->
+            
+    <footer class="footer">
+        <div class="footercontainer">
+            <div class="footerrow">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="company.html#About-Us">about us</a></li>
+                        <li><a href="company.html#Our-Services">our services</a></li>
+                        <li><a href="company.html#Privacy-Policy">privacy policy</a></li>
+                        <li><a href="company.html#Affiliate-Program">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>support</h4>
+                    <ul>
+                        <li><a href="support.html#FAQ">FAQ</a></li>
+                        <li><a href="support.html#Shipping">shipping</a></li>
+                        <li><a href="support.html#Returns">returns</a></li>
+                        <li><a href="support.html#Order-Status">order status</a></li>
+                        <li><a href="support.html#Payment-Options">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="store.html#Supplements">supplements</a></li>
+                        <li><a href="store.html#Clothing">clothing</a></li>
+                        <li><a href="store.html#Upcoming">upcoming</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/euphoriax_official"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@euphoriax_official"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.youtube.com/@euphoriax_official"><i class="fab fa-youtube"></i></a>
+                        <a href="https://discord.com/invite/q7NCgsH3CS"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+            <p>	&#169;2023 - Euphoriax - Belgium</p>
+        </div>
+    </footer>
+
+</body>
+</html>

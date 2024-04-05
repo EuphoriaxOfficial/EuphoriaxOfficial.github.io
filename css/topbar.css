@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.topbarvast{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+/*-------topbar1-------*/
+
+
+.topbar1{
+    width: 100%;
+    height: 35px;
+    background-color: #ebeaea;
+    background-color: solid;
+    display: flex;
+    justify-content: right;
+}
+
+.teksttopbar1{
+    align-items: center;
+    display: flex;
+    height: 35px;
+    margin-right: 21px;
+}
+.teksttopbar1 a{
+    text-decoration: none;
+    line-height: 18px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 12px;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-color: #5252525c;
+    color: #525252;
+}
+.teksttopbar1 img{
+    height: 16px;
+    margin-top: 5px;
+}
+
+
+/*-------topbar2-------*/
+
+
+.topbar2{
+    display:flex;
+    flex-direction: row;
+    height: 69px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid #ebeaea;
+}
+
+/*-------icons shop en like-------*/
+
+.icons-topbar2{
+    display: flex;
+    margin-right: 30px;
+    margin-left: 50px;
+    align-items: center;
+}
+.icons-topbar2 img{
+    margin: 0;
+    margin-bottom: -7px;
+    margin-right: 20px;
+    background-color: #f9f9f9;
+    height: 40px;
+    width: 40px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.02);
+    border-color: #ebeaea;
+    border-width: 1px;
+    border-style: solid;
+    transition: 0.5s;
+}
+
+.icons-topbar2 img:hover{
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.20);
+    border-radius: 2px;
+}
+
+.zoek-container:hover .zoekknop,
+.zoek-container:hover .zoekbar {
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.20);
+    border-radius: 2px;
+}
+
+/*-------zoekbar -------*/
+.zoek-container{
+    flex: 1;
+    width: 10px;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+
+}
+.zoekbar{
+    width: 0px;
+    flex: 1;
+    height: 40px;
+    padding-left: 13px;
+    border-color: #ebeaea;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.02);
+    transition: 0.5s;
+    outline: none;
+    order: 1;
+}
+.zoekknop{
+    height: 40px;
+    width: 40px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ebeaea;
+    border-radius: 0px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.02);
+    background-color: #f9f9f9;
+    transition: 0.5s;
+    order: 2;
+    display: block;
+}
+.zoekbar::placeholder{
+    font-family:Poppins, sans-serif;
+    font-size: 13px;
+    display: block;
+}
+
+.zoekknop img{
+    height: 20px;
+    width: auto;
+    margin: 0;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+
+/*-------logo rechts boven-------*/
+
+.logo-topbar2{
+    display: flex;
+}
+.logo-topbar2 img{
+    width: 69px;
+    margin-top: 1px;
+    margin-left: 50px;
+}
+
+
+/*-------navigatie-------*/
+.nav-links{    
+    flex: 6;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    transition: 0.75s;
+}
+
+.topbar2 ul{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.nav-links ul li {
+    display: inline-block;
+    padding: 8px 12px;
+}
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+.nav-links ul li::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #ff5361;
+    display: block;
+    margin: auto;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ff5361;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+/*-------topbar3-------*/
+
+.topbar3{
+    width: 100%;
+    height: 151px;
+    background-color: #f5f5f5;
+    background-color: solid;
+}
+.teksttopbar3{
+    color: #5f5f5f;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 118px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+

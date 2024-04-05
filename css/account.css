@@ -1,0 +1,134 @@
+
+.zijkantfotoaccount{
+    width: 49%;
+    height: 100vh; 
+    background-color: #4b1e54;
+    float: left; 
+    overflow: hidden;
+    position: relative;
+}
+.zijkantfotoaccount img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+
+.login{
+    display: flex;
+}
+.tektbox_loginreg{
+    flex:1;
+}
+
+.alert{
+    border-radius: 2px;
+    font-size: 11px;
+    color: #ff5361;
+    padding-top: 2px;
+    padding-left: 2px;
+
+}
+
+
+.form-group{
+    align-items: center;
+    display: grid;
+    flex: 1;
+    outline: none;
+}
+.form-group p{
+    padding:0;
+    margin-top: 18px;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+.form-group ::placeholder{
+    font-size: 15px;
+}
+
+
+
+.form-control{
+    width: 350px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    justify-self: center;
+    padding: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0;
+    border:gray solid 1px;
+}
+.form-btn{
+    margin-top: 32px;
+    border-radius: 20px;
+}
+.btn-primary{
+    background-color: rgb(0, 0, 0);
+    height: 40px;
+    border-radius: 20px;
+    width: 320px;
+    justify-self: center;
+    border: none;
+    opacity: 0.80;
+    transition: 0.8s;
+
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-primary:hover{
+    opacity: 1;
+}
+
+
+
+.invulkaders{
+    align-items: center;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    margin-top: 150px;
+    padding: 0;
+}
+.invulkaders img{
+    height: 90px;
+    margin-bottom: 5px;
+}
+.invulkaders h1{
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 60px;
+    font-weight: 600;
+}
+
+.GoToSignup{
+    justify-content: center;
+    width: 100%;
+    display: grid;
+    height: 25px;
+    margin-top: 13px;
+}
+.GoToSignup a{
+    padding: 0;
+    color: black;
+    font-weight: 600;
+}
+
+#accounttekst p, #accounttekst h1, #accounttekst a{
+    color: white;
+    border-color: white;
+}
+#accounttekst a:hover{
+    border-color: #ff5361;
+}

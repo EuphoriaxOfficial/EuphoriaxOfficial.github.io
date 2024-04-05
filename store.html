@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="vieuwport" 
+    content="with=device-widht, initial-scale=1.0">
+
+    <link rel="icon" href="icons/logozwartsite.png">
+    <title>Euphoriax</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/topbar.css">
+    <link rel="stylesheet" href="css/basics.css">
+    <link rel="stylesheet" href="css/covers.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/sidemenu.css">
+
+    <script src="js/script.js" defer></script>
+    <script src="js/sidemenu.js" defer></script>
+    <script src="js/slider.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+</head>
+
+<body>
+
+    <!---- scroll to top ----->
+    <div onclick="ScrollToTop()" class="ScrollTop"> <img src="icons/top.png"></div>
+
+
+    <!---- 3 topbars ----->
+
+    <section>
+
+        <section class="topbarvast">
+        <div class="topbar1">
+
+            <div class="teksttopbar1">
+                <a href="partner.html">Partner</a>
+                <a href="support.html">Support</a>
+                <a href="company.html">About Us</a>
+                <a style="border-right-width: 0px; padding-left: 8px;"><img src="icons/belgie.png" alt=""></a>
+            </div>
+        </div>
+
+        <div class="topbar2">
+
+            <div class="icons-topbar2" style=" margin-right: 0;">
+               <img class="menu-topbar2" src="icons/menu.png" 
+               style="padding: 7px; cursor: pointer; opacity: 85%; margin-bottom: 0px;" 
+               onclick="showMenu()" id="knop1">
+            </div>
+
+            <div class="logo-topbar2">
+            <a href="index.html"><img src="image/logozwart.png"></a>
+            </div>
+
+            <div class="SideMenu" id="SideMenu">
+
+                <div class="topbarvast">
+                    <div class="sidemenuhoofd" style="padding-top: 30px; height: 100px;">
+                        <a href="index.html" id="TitelSub" style="width: auto;">HOME</a>
+                        <i class="fa fa-times" onclick="hideMenu()" id="knop2"></i>
+                    </div>
+
+                    <div class="sidemenuzoek" style="height: 100px; padding: 40px;
+                    padding-top: 20px; padding-bottom: 20px; ">
+
+                            <input class="zoekbar" 
+                            style="order: 1; border-radius: 0; border-top-left-radius: 2px; border-bottom-left-radius: 2px; 
+                            flex: 1; width: 0; display: block; height: 50px;"
+                            id="zoekbar" type="text" placeholder="Search a product">
+
+                            <button class="zoekknop" 
+                            style="border-radius: 0; border-top-right-radius: 2px; border-bottom-right-radius: 29x; display: block;
+                            height: 50px; width: 50px;" 
+                            id="zoekknop">
+
+                            <img src="icons/search.png">
+                            </button>
+                    </div>
+                </div>
+
+                    <div class="tussenfoto" style="margin: 0; margin-top: 200px;">
+                        <img src="image/tussenfoto.png" style="height: 310px;">
+                
+                    </div>
+
+                    
+                    <div class="sidemenuhoofd">
+                        <a href="store.html" id="TitelSub">STORE</a>
+                        <img src="icons/slidemenuup.png" onclick="SubOpenClose(this, 'store'); SubiconChange(this)">
+                    </div>
+                    <div class="sidemenusub closesub" id="store-submenu">
+                        <a href="store.html"> <p>New</p> </a>
+                        <a href="store.html"> <p>Popular</p> </a>
+                        <a href="store.html"> <p style="border-bottom: 0" >Upcoming</p> </a>
+                    </div>
+                
+                    <div class="sidemenuhoofd">
+                        <a href="store.html#Supplements" id="TitelSub">MEMBERSHIPS</a>
+                        <img src="icons/slidemenuup.png" onclick="SubOpenClose(this, 'supplements'); SubiconChange(this)">
+                    </div>
+                    <div class="sidemenusub closesub" id="supplements-submenu">
+                        <a href="https://www.patreon.com/euphoriaxpremium/membership"> <p>Personal Assistance</p> </a>
+                        <a href="store.html"> <p style="border-bottom: 0" >Premium</p> </a>
+
+                    </div>
+                
+                    <div class="sidemenuhoofd">
+                        <a href="drops.html" id="TitelSub">PATREON</a>
+                        <img src="icons/slidemenuup.png" onclick="SubOpenClose(this, 'drops'); SubiconChange(this)">
+                    </div>
+                    <div class="sidemenusub closesub" id="drops-submenu">
+                        <a href="https://www.patreon.com/euphoriaxpremium/membership"> <p>Memberships</p> </a>
+                        <a href="https://www.patreon.com/euphoriaxpremium/shop"> <p style="border-bottom: 0">Items Availible</p> </a>
+                    </div>
+
+
+                    <div class="footerside1">
+
+                    </div>
+                    <div class="footerside2">
+                        <a href="partner.html">Partner</a>
+                        <a href="support.html">Support</a>
+                        <a href="company.html#About-Us">About Us</a>
+                        <a style="border-right-width: 0px; padding-left: 8px;"><img src="icons/belgie.png" alt=""></a>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="store.html">STORE</a></li>
+                    <li><a href="https://www.patreon.com/euphoriaxpremium/membership">MEMBERSHIPS</a></li>
+                    <li><a href="https://www.patreon.com/EuphoriaxPremium">PATREON</a></li>
+                </ul> 
+            </div>
+
+            <div class="zoek-container">
+                    <input class="zoekbar" id="zoekbar2" type="text" placeholder="Search a product">
+                    <button class="zoekknop" id="zoekknop2">
+                        <img src="icons/search.png">
+                    </button>
+
+            </div>
+
+            <div class="icons-topbar2" style="margin-left: 0px;">
+                <a href="under-maintenance.html"><img src="icons/heart.png" style="padding: 3px; padding-bottom: 2px;"></a>
+                <a href="under-maintenance.html"><img src="icons/shopping-bag.png" style="padding: 5px; padding-bottom: 6px; margin-right: 20px;"></a>
+            </div>
+                       
+        </div>
+
+
+    </section>
+
+        <div class="topbar3" style="height: 104px;">
+            <a href="partner.html" class="teksttopbar3"></a>
+        </div>    
+    </section>
+
+
+
+        <!-----product-previeuw1------>
+
+    <h2 id="Clothing">AVAILIBLE</h2>
+    <section class="nonswiper-products">
+        <div class="product-previeuw">   
+    
+            <div class="rij">
+                <div class="product-previeuw-sectie" style="margin-right: 5px; margin-left: 5px;">
+                    <Button class="heartprevieuw"><img src="icons/heart.png" onClick="HeartChange(this)"></button>
+                    <a class="fotoprevieuw" href="https://www.patreon.com/EuphoriaxPremium/shop/upgraded-ranked-code-172486?source=storefront"><img src="image/shirt.png"></a>
+                    <h3>RANKED SYSTEM</h3>
+                    <p>price &euro; 39.99</p>
+                </div>
+                <div class="product-previeuw-sectie" style="margin-right: 5px; margin-left: 5px;">
+                    <Button class="heartprevieuw"><img src="icons/heart.png" onClick="HeartChange(this)"></button>
+                    <a class="fotoprevieuw" href="https://www.patreon.com/EuphoriaxPremium/shop/upgraded-ranked-code-172486?source=storefront"><img src="image/shirt.png"></a>
+                    <h3>RANKED SYSTEM</h3>
+                    <p>price &euro; 39.99</p>
+                </div>
+                <div class="product-previeuw-sectie" style="margin-right: 5px; margin-left: 5px;">
+                    <Button class="heartprevieuw"><img src="icons/heart.png" onClick="HeartChange(this)"></button>
+                    <a class="fotoprevieuw" href="https://www.patreon.com/EuphoriaxPremium/shop/upgraded-ranked-code-172486?source=storefront"><img src="image/shirt.png"></a>
+                    <h3>RANKED SYSTEM</h3>
+                    <p>price &euro; 39.99</p>
+                </div>
+                <div class="product-previeuw-sectie" style="margin-right: 5px; margin-left: 5px;">
+                    <Button class="heartprevieuw"><img src="icons/heart.png" onClick="HeartChange(this)"></button>
+                    <a class="fotoprevieuw" href="https://www.patreon.com/EuphoriaxPremium/shop/upgraded-ranked-code-172486?source=storefront"><img src="image/shirt.png"></a>
+                    <h3>RANKED SYSTEM</h3>
+                    <p>price &euro; 39.99</p>
+                </div>                        
+            </div>
+        </div>
+    </section>
+    
+        <!-----product-previeuw1-swiper------>
+    <section class="swiper-products">
+        <div class="swiper mySwiper">
+    
+            <div class="product-previeuw swiper-wrapper" style="margin: 0px;" >
+                <div class="product-previeuw-sectie swiper-slide" style="margin: 0px;">
+                <Button class="heartprevieuw"><img src="icons/heart.png" onClick="HeartChange(this)"></button>
+                    <a class="fotoprevieuw" href="https://www.patreon.com/EuphoriaxPremium/shop/upgraded-ranked-code-172486?source=storefront"><img src="image/shirt.png"></a>
+                    <h3>RANKED SYSTEM</h3>
+                    <p>price &euro; 39.99</p>
+                </div>
+                <div class="product-previeuw-sectie swiper-slide" style="margin: 0px;">
+                <Button class="heartprevieuw"><img src="icons/heart.png" onClick="HeartChange(this)"></button>
+                    <a class="fotoprevieuw" href="https://www.patreon.com/EuphoriaxPremium/shop/upgraded-ranked-code-172486?source=storefront"><img src="image/shirt.png"></a>
+                    <h3>RANKED SYSTEM</h3>
+                    <p>price &euro; 39.99</p>
+                </div>
+                <div class="product-previeuw-sectie swiper-slide" style="margin: 0px;">
+                    <Button class="heartprevieuw"><img src="icons/heart.png" onClick="HeartChange(this)"></button>
+                    <a class="fotoprevieuw" href="https://www.patreon.com/EuphoriaxPremium/shop/upgraded-ranked-code-172486?source=storefront"><img src="image/shirt.png"></a>
+                    <h3>RANKED SYSTEM</h3>
+                    <p>price &euro; 39.99</p>
+                </div>
+                <div class="product-previeuw-sectie swiper-slide" style="margin: 0px;"> 
+                <Button class="heartprevieuw"><img src="icons/heart.png" onClick="HeartChange(this)"></button>
+                    <a class="fotoprevieuw" href="https://www.patreon.com/EuphoriaxPremium/shop/upgraded-ranked-code-172486?source=storefront"><img src="image/shirt.png"></a>
+                    <h3>RANKED SYSTEM</h3>
+                    <p>price &euro; 39.99</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+<!----Footer----->
+<footer class="footer">
+    <div class="footercontainer">
+        <div class="footerrow">
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="company.html#About-Us">about us</a></li>
+                    <li><a href="company.html#Our-Services">our services</a></li>
+                    <li><a href="company.html#Privacy-Policy">privacy policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>support</h4>
+                <ul>
+                    <li><a href="support.html#FAQ">FAQ</a></li>
+                    <li><a href="support.html#Payment-Options">payment options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>online shop</h4>
+                <ul>
+                    <li><a href="https://www.patreon.com/euphoriaxpremium/membership">Memberships</a></li>
+                    <li><a href="https://www.patreon.com/euphoriaxpremium/shop">Packagings</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/euphoriax_official"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@euphoriax_official"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.youtube.com/@euphoriax_official"><i class="fab fa-youtube"></i></a>
+                    <a href="https://discord.com/invite/q7NCgsH3CS"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+        <p>	&#169;2024 - Euphoriax - Belgium</p>
+    </div>
+</footer>
+
+
+
+
+
+</body>
+</html>

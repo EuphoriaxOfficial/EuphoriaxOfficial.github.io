@@ -1,0 +1,372 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+.ScrollTop{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    z-index: 102;
+    transition: 0.5s;
+}
+.ScrollTop img{
+    height: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.300);
+    border-radius: 25px;
+    transition: 0.5s;
+}
+.ScrollTop:hover{
+    bottom: 35px;
+}
+.ScrollTop img:hover{
+    opacity: 90%;
+}
+
+
+.swiper-products{
+    display: none;
+}
+.nonswiper-vakjesoverlay{
+    display: none;
+}
+.swiper-vakjesoverlay{
+    display: none;
+}
+
+
+
+
+.swiper-products h2, .swiper-vakjesoverlay h2, .tekstbox h2, 
+#Supplements, #Upcoming, #Clothing{
+    margin-top: 65px;
+    margin-bottom: 5px;
+    text-align: left;
+    font-weight: 600;
+    margin-left: 50px;
+    font-size: 22px;
+}
+.tekstbox{
+    margin-left: 50px;
+}
+.tekstbox h1{
+    font-size: 50px;
+    margin-top: 0;
+    font-weight: 600;
+    letter-spacing: -1px;
+    margin-top: 75px;
+}
+
+.tekstbox p{
+    color: #000000ef;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: left;
+    padding: 0;
+    margin-right: 25px;
+    margin-top: 20px;
+    line-height: 28px;
+    width: 60%;
+}
+.tekstbox b{
+    font-weight: 600;
+}
+
+/*------Hoofdimages-----*/
+.hoofdimage1, .hoofdimage2{
+    background-image: url(image/hoofdfoto1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 196px;
+    width: auto;
+}
+.hoofdimage2{
+    background-image: url(image/hoofdfoto2.png);
+    height: 645px;
+}
+
+
+.headerSec{
+    min-height: 20vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(255, 255, 255, 0.1)),url(image/bannersec.png);
+    background-position:center;
+    background-size: cover;
+    position: relative;
+}
+
+/*------Tussenfoto-----*/
+
+
+.tussentitteltekst{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300px;
+    line-height: 15px;
+    padding: 5px;
+}
+
+
+
+/*------Witte knop naar rode knop------*/
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 3px solid #fff;
+    padding: 12px 30px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: 0.75s;
+}
+.hero-btn:hover{
+    border: 3px solid #ff5361;
+    background: #ff5361;
+}
+
+
+.hero-btn-tussen{
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    border: 3px solid #000000;
+    padding: 12px 30px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: 0.75s;
+    margin-right: 3px;
+}
+.hero-btn-tussen:hover{
+    border: 3px solid #ff5361;
+    background: #ff5361;
+}
+
+
+/*------Indeling lijn------*/
+.rij{                   
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+}
+.rij2{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+}
+
+/*------product previeuw-----*/
+
+.product-previeuw{
+	margin-left: 45px;
+	margin-right: 45px;
+}
+.product-previeuw-sectie{
+    border-radius: 3px;
+    margin-bottom: 6%;
+    text-align: left;
+    align-items: center;
+    position: relative;
+}
+
+.fotoprevieuw img {
+    width: 100%;
+    border-radius: 2px;
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.01);
+}
+
+.heartprevieuw {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 15px;
+    margin-top: 15px;
+    border-style: none;
+    background-color: transparent;
+}
+
+.heartprevieuw img {
+    height: 36px;
+    background-color: #ffffff;
+    padding-bottom: 5px;
+    padding-top: 6px;
+    padding-left: 6px;
+    padding-right: 5px;
+    border-radius: 18px;
+    display: flex;
+    z-index: 100;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    visibility: hidden;
+    cursor: pointer;
+}
+
+/*------hover product previeuw-----*/
+.product-previeuw-sectie:hover img {
+    visibility: visible;
+}
+.fotoprevieuw img:hover{
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.30);
+    
+}
+.heartprevieuw img:hover{
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.20);
+}
+
+
+.product-previeuw h2{
+    margin-top: 85px;
+    margin-bottom: 5px;
+    text-align: left;
+    font-weight: 600;
+    margin-left: 5px;
+    font-size: 22px;
+}
+
+.product-previeuw h3{
+    margin-top: 5px;
+    margin-bottom: 0px;
+    text-align: left;
+    font-weight: 600;
+    margin-left: 8px;
+    font-size: 15px;
+}
+
+.product-previeuw p{
+    padding: 0;
+    margin-left: 8px;
+}
+
+
+
+
+/*------3 fotos met overlay------*/
+
+.vakjesoverlay-design{
+    border-radius: 2px;
+    position: relative;
+    display: flex;
+    height: auto;
+    margin-bottom: 0px;
+    margin: 0;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.01);
+    transition: 0.5s;
+}
+
+.vakjesoverlay-design img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 2px;
+}
+
+.vakjesoverlay-design:hover{
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 400px;
+    color: #000000;
+    font-size: 20px;
+    bottom: 0;
+    position: absolute;
+    opacity: 0;
+    text-align: left;
+    margin-left: 8%;
+    transition: 0.5s;
+    letter-spacing: -1px;
+}
+.layer:hover h3{
+    bottom: 7%;
+    opacity: 1;
+}
+
+.layer img{
+    height: 44px;
+    width: auto;
+    position: absolute;
+    bottom: 0%;
+    right: 7%;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover img{
+    bottom: 5.5%;
+    opacity: 70%;
+}
+.layer img:hover{
+    bottom: 5.5%;
+    opacity: 95%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.20);
+    border-radius: 22px;
+    right: 6%;
+}
+
+
+
+
+/*------Video------*/
+.video-and-rectangle {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 200px;
+}
+
+.video-container {
+    flex: 1;
+    margin-right: 10px;
+    margin-left: 3%;
+}
+
+.rectangle {
+    width: 60%;
+    background-color: #fff3f3;
+    margin-right: 3%;
+    border-radius: 3px;
+    height:400px; /* Hoogte van de rechthoek instellen op 50% */
+}
+
+.video-container video {
+    width: auto;
+    height: 400px;
+    border-radius: 3px;
+}
+
+.rectangle p {
+    text-align: right;
+    margin: 0;
+    margin-top: 10%;
+    margin-right: 5%;
+}
+@media(max-width: 700px){
+    .video-container video,.rectangle{
+        height: 300px;
+    }}
+
